@@ -36,7 +36,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 - `Home Page`: Contains the name ,email and mobile number of the user.
 [homepage]()
-- `Sign-In`: User authentication to check whether username and password match with details existing in the database.
+- `Log-In`: User authentication to check whether username and password match with details existing in the database.
 -Here username:foo and Password: bar to login to the website.
 -Fully Responsive website there no external css library.
 
