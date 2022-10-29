@@ -1,29 +1,21 @@
-import { motion } from 'framer-motion';
-import React from 'react';
-
+import React, { useState, useEffect } from "react";
+import { RotatingLines } from "react-loader-spinner";
 const Loader = () => {
+  const [loader, setLoader] = useState(false);
+  useEffect(() => {
+    setLoader(true);
+    setTimeout(() => {
+      setLoader(false);
+    }, 1000);
+  }, []);
   return (
-    <motion.div
-      exit={{ opacity: 0 }}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className='fixed flex justify-center items-center w-screen h-screen text-center loading top-0 left-0'
-      style={{ backgroundColor: '#0008', color: '#fff', zIndex: 20 }}
-    >
-      <svg width='130' height='130' viewBox='0 0 40 50'>
-        <polygon
-          strokeWidth='1'
-          stroke='#fff'
-          fill='none'
-          points='20,1 40,40 1,40'
-        ></polygon>
-        <text fill='#fff' x='5' y='47'>
-          Loading
-        </text>
-      </svg>
-    </motion.div>
+    <RotatingLines
+      strokeColor='grey'
+      strokeWidth='5'
+      animationDuration='0.75'
+      width='96'
+      visible={true}
+    />
   );
 };
-
 export default Loader;

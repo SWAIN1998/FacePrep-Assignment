@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styles from "../styles/Home.module.css";
 import Loader from "../components/Loader";
 import { useLocation } from 'react-router-dom';
-
 const Home = () => {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -86,10 +85,15 @@ const Home = () => {
             setSort('asc');
         }
     }
+    const logout = () => {
+        localStorage.removeItem('auth');
+        window.location.href = '/';
+    }
 
     return (
         <div className={styles.container}>
           <h1>UserListing</h1>
+          <button className={styles.logout} onClick={logout}>Logout</button>
             <div className={styles.search}>
                 <input type="text" placeholder="Search" value={search} onChange={handleSearch} />
             </div>

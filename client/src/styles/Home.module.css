@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 .search{
-    width: 100%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,4 +169,13 @@
         .listItemPhone{
             flex-direction: column;
         }
+    }
+    button{
+        padding: 16.5px 14px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #9155FD;
+        color: #FFFFFF;
     }
