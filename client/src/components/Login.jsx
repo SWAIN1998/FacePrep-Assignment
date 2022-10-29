@@ -1,7 +1,6 @@
 // 1. The app must be a authenticated app. It can accept fake login with details, username: foo, password: bar.
 // 2. Post login route is '/home'. This route shows our main list UI. This page shouldn't be accessible by non logged in users.
 // 3. logged in pages must show logout button. On click of this logout it will redirect to the login page.
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from "../styles/Login.module.css";
