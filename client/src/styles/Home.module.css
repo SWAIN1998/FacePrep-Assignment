@@ -1,0 +1,172 @@
+.container{
+    font-family: "Nunito sans",sans-serif!important;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    padding: 20px;
+    /* margin: 20px auto; */
+    max-width: 4000px;
+    /* min-height: 4000px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.search{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .search input{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .list input{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+    .list input:focus{
+        border: 1px solid #333;
+    }
+    .list button{
+        width: 100%;
+        padding: 16.5px 14px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #9155FD;
+        color: #FFFFFF;
+    }
+    .list button:hover{
+        background-color: #7A3FFD;
+    }
+   .listHeader{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+    }
+    .listHeader input{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+    .listHeader input:focus{
+        border: 1px solid #333;
+    }
+    .listHeader button{
+        width: 100%;
+        padding: 16.5px 14px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #9155FD;
+        color: #FFFFFF;
+    }
+    .listHeader button:hover{
+        background-color: #7A3FFD;
+    }
+    .listHeaderItem{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+        margin-top: 10px;
+    }
+    .listBody{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .listItem{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+        margin-top: 10px;
+    }
+    .listItemName{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+    }
+    .listItemNameText{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+    }
+    .listItemEmail{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+    }
+    .listItemPhone{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:10px;
+    }
+    @media screen and (max-width: 768px){
+        .listHeaderItem{
+            flex-direction: column;
+        }
+        .listItem{
+            flex-direction: column;
+        }
+        .listItemName{
+            flex-direction: column;
+        }
+        .listItemNameText{
+            flex-direction: column;
+        }
+        .listItemEmail{
+            flex-direction: column;
+        }
+        .listItemPhone{
+            flex-direction: column;
+        }
+    }

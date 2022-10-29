@@ -50,4 +50,9 @@
         text-decoration: none;
         font-size: 14px;
     }
+    @media screen and (max-width: 400px){
+        .container{
+            max-width: 300px;
+        }
+    }
     
