@@ -4,17 +4,19 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from "../styles/Login.module.css";
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState(false);
+    const navigate = useNavigate();
     
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username === 'foo' && password === 'bar') {
         localStorage.setItem('auth', 'true');
-        window.location.href = '/home';
+        navigate('/home');
         } else {
         setError(true);
         }

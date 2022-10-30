@@ -108,20 +108,20 @@ const Home = () => {
                         if (filteredUsers.length === index + 1) {
                             return <div className={styles.listItem} key={user.email} ref={lastUserElementRef}>
                                 <div className={styles.listItemName}>
-                                    <img src={user.picture.thumbnail} alt="user" />
-                                    <div className={styles.listItemNameText}>{user.name.first} {user.name.last}</div>
+                                    <img src={user.picture.thumbnail} alt="user" />                                   
                                 </div>
+                                <div className={styles.listItemNameText}>{user.name.first} {user.name.last}</div>
                                 <div className={styles.listItemEmail}>{user.email}</div>
                                 <div className={styles.listItemPhone}>{user.phone}</div>
                             </div>
                         } else {
                             return <div className={styles.listItem} key={user.email}>
                                 <div className={styles.listItemName}>
-                                    <img src={user.picture.thumbnail} alt="user" />
-                                    <div className={styles.listItemNameText}>{user.name.first} {user.name.last}</div>
+                                    <img src={user.picture.thumbnail} alt="user" />                                  
                                 </div>
-                                <div className={styles.listItemEmail}>{user.email}</div>
-                                <div className={styles.listItemPhone}>{user.phone}</div>
+                                <div className={styles.listItemNameText}>Name: {user.name.first} {user.name.last}</div>
+                                <div className={styles.listItemEmail}>Email: {user.email}</div>
+                                <div className={styles.listItemPhone}>Mobile: {user.phone}</div>
                             </div>
                         }
                     }
